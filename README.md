@@ -13,16 +13,17 @@ Language: JavaScript <br>
 
 ## Setup
 
-0. Fork this repository from my git hub and clone it into the directory that with all of your other assignments
+0. Fork this repository from my git hub. Then clone it into the directory with all of your other assignments.
+`git clone <url for the repo you forked>`
 
-1.  create a file called `app.js` inside of the coled directory
-`cd <cloned directory name>`
+1.  Create a file called `app.js` inside of the cloned directory. Using
+`cd <cloned directory name>` and
 `touch app.js` 
 
-2. track and commit all files
+2. Track and commit all files 
 `git add .`
-`git commit -m '<mestage>'`
-your first commit should look something like this 'ceate app.js file'
+`git commit -m '<message>'`
+your first commit message should look something like this `'ceated app.js file'`
 
 
 3. push this repo to your github
