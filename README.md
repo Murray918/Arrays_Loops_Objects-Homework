@@ -13,19 +13,26 @@ Language: JavaScript <br>
 
 ## Setup
 
-0. Get in today's directory in your `salty-sardines` directory.
+0. Fork this repository from my git hub and clone it into the directory that with all of your other assignments
 
-1. From inside of today's directory, *Fork* this repo and clone it. (While you're doing that, ask yourself: Why are we forking and cloning and not just cloning)?  
+1.  create a file called `app.js` inside of the coled directory
+`cd <cloned directory name>`
+`touch app.js` 
 
-2. (Did you see this coming?) Inside the directory created by the clone, build our file structure (index.html and js file). Put your answers in `app.js`.
+2. track and commit all files
+`git add .`
+`git commit -m '<mestage>'`
+your first commit should look something like this 'ceate app.js file'
 
-3. Keep your answers organized! Included a commented header for each section in your answers file.
+
+3. push this repo to your github
+`git push -u oirigin master`
 
 4. If you're stuck on something for "too long" or get overly frustrated, make a comment and move on. Return to it later.
 
-5. After each section (even if you're not fully done with it), *add* and *commit* your work. Use the commit messages that you see at the end of each section. If you go back and fix a section, commit again with an updated message.
+5. After each section (even if you're not fully done with it), *add* and *commit* your work. Use the commit messages that you see at the end of each section. If you go back and fix a section, commit again with an updated message. We want to see at-least one commit for each problem. 
 
-6. When you are done with your homework, push to your fork and then and make a pull request.
+6. When you are done with your homework, push to your fork and then and make a pull request to my github.
 
 * Remember: the "Bonus" questions and the "Hungry for More" questions don't count against you, they're just extra questions if you wanna push beyond the baseline.
 
