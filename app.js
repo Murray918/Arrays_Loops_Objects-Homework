@@ -17,3 +17,24 @@ for(let i = 0;i<20;i++)
 	else
 		console.log("Love me, pet me! HSSSSSS!")
 }
+for(let i = 1;i<100;i++)
+{
+	let check1 = false
+	let check2 = false
+	if(i%3==0)
+	{
+		console.log("Fizz")
+		check1 = true
+	}
+	if(i%5==0)
+	{
+		console.log("Buzz")
+		check2 = true
+	}
+	if(check1&&check2)
+	{
+		console.log("FizzBuzz")
+		check1 = false
+		check2 = false
+	}
+}
