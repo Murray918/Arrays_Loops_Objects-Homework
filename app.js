@@ -7,12 +7,12 @@ for(let i = 0;i<=200;i++)
 	if(i%2==0)
 		console.log(i)
 }
+let stringArray = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 for(let i = 0;i<20;i++)
 {
-	let stringArray = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 	if(i%2==0)
 	{
-		console.log(stringArray[Math.floor(Math.random() * 2)])
+		console.log(stringArray[Math.floor(Math.random() * 3)])
 	}
 	else
 		console.log("Love me, pet me! HSSSSSS!")
@@ -73,6 +73,7 @@ for(let i = 0;i<ninjaTurtles.length;i++)
 }
 //This problem was incorrect, kristyn's left shoe was already a property of kristyn's closet, so I had to move the property to Thom's accessories
 const kristynsCloset = [
+  "left shoe",
   "cowboy boots",
   "right sock",
   "GA hoodie",
@@ -96,14 +97,14 @@ const thomsCloset = [
     "PJs"
   ],[
     // Thom's accessories
-    "kristyn's left shoe",
     "wool mittens",
     "wool scarf",
     "raybans"
   ]
 ];
-let kristynsShoe = thomsCloset[2].splice(0, 1)
-kristynsCloset.push(kristynsShoe)
+let kristynsShoe = kristynsCloset.shift()
+thomsCloset[2].push(kristynsShoe)
+console.log(thomsCloset[2].toString())
 let kristynsOutfit = ""
 let thomsOutfit = ""
 let thomsRandomNumber = 0
@@ -122,7 +123,7 @@ for(let item of kristynsCloset)
 //array bracket notation?
 for(let item of thomsCloset)
 {
-	console.log(item)
+	console.log(item.toString()+"\n")
 }
 let sum = 0
 for(let i = 0;i<1000;i++)
