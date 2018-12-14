@@ -4,29 +4,30 @@ for(let i = 1;i<=20;i++)
 }
 for(let i = 0;i<=200;i++)
 {
-	if(i%2==0)
+	if(i%2===0)
 		console.log(i)
 }
 let stringArray = ["...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 for(let i = 0;i<20;i++)
 {
-	if(i%2==0)
+	if(i%2===0)
 	{
 		console.log(stringArray[Math.floor(Math.random() * 3)])
 	}
 	else
 		console.log("Love me, pet me! HSSSSSS!")
 }
+
 for(let i = 1;i<100;i++)
 {
 	let check1 = false
 	let check2 = false
-	if(i%3==0)
+	if(i%3===0)
 	{
 		console.log("Fizz")
 		check1 = true
 	}
-	if(i%5==0)
+	if(i%5===0)
 	{
 		console.log("Buzz")
 		check2 = true
@@ -38,6 +39,7 @@ for(let i = 1;i<100;i++)
 		check2 = false
 	}
 }
+
 const kenny = ["Kenny", 1000, "Austin"]
 const jimHaff = ["Jim H", 16, "All cities"]
 const reuben = ["Reuben", 22, "Durham"]
@@ -54,6 +56,7 @@ jimHaff.splice(2, 1)
 let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 let turtle = ""
 let swichFlag = false
+
 for(let i = 0;i<ninjaTurtles.length;i++)
 {
 	for(let letter of ninjaTurtles[i])
@@ -71,6 +74,7 @@ for(let i = 0;i<ninjaTurtles.length;i++)
 	}
 	console.log(turtle)
 }
+
 //This problem was incorrect, kristyn's left shoe was already a property of kristyn's closet, so I had to move the property to Thom's accessories
 const kristynsCloset = [
   "left shoe",
@@ -102,9 +106,9 @@ const thomsCloset = [
     "raybans"
   ]
 ];
+
 let kristynsShoe = kristynsCloset.shift()
 thomsCloset[2].push(kristynsShoe)
-console.log(thomsCloset[2].toString())
 let kristynsOutfit = ""
 let thomsOutfit = ""
 let thomsRandomNumber = 0
@@ -114,8 +118,14 @@ for(let i = 0;i<3;i++)
 	kristynsOutfit += (kristynsCloset[Math.floor(Math.random()*5)] + "\n")
 	thomsOutfit += thomsCloset[thomsRandomNumber][Math.floor(Math.random()*thomsCloset[thomsRandomNumber].length)] + "\n"
 }
+
 console.log("Thomas changes his outfit everytime you ask him to, right now he's wearing: \n"+thomsOutfit)
 console.log("Kristyn changes her outfit everytime you ask her to, right now she's wearing: \n"+kristynsOutfit)
+console.log("Thomas changes his outfit everytime you ask him to, right now he's wearing: \n"+thomsOutfit)
+console.log("Kristyn changes her outfit everytime you ask her to, right now she's wearing: \n"+kristynsOutfit)
+console.log("Thomas changes his outfit everytime you ask him to, right now he's wearing: \n"+thomsOutfit)
+console.log("Kristyn changes her outfit everytime you ask her to, right now she's wearing: \n"+kristynsOutfit)
+
 for(let item of kristynsCloset)
 {
 	console.log("WHIRR: Now washing "+item)
@@ -128,9 +138,7 @@ for(let item of thomsCloset)
 let sum = 0
 for(let i = 0;i<1000;i++)
 {
-	if(i%3==0)
-		sum+=i
-	if(i%5==0)
+	if(i%3===0 || i%5===0)
 		sum+=i
 }
 let argument = 15
