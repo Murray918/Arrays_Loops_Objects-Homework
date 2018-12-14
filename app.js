@@ -39,7 +39,6 @@ for (let i = 1; i <= 20; ++i)
 	}
 }
 
-/*
 //4) Write a javascript application that logs all numbers from 1 - 100.
 //If a number is divisible by 3 log "Fizz" instead of the number.
 //If a number is divisible by 5 log "Buzz" instead of the number.
@@ -58,7 +57,7 @@ for (let i = 1; i <= 100; ++i)
 }
 
 
-*/
+
 
 
 //5) Jim Clark decides that Kenny can't be named "Kenny" anymore. Remove "Kenny" from the kenny array and replace it with "Gameboy".
