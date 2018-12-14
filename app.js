@@ -51,4 +51,24 @@ reuben.push("Chicago")
 jimHaff.pop()
 jimHaff.push("Los Angeles", "Austin", "Sacramento")
 jimHaff.splice(2, 1)
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
+let turtle = ""
+let swichFlag = false
+for(let i = 0;i<ninjaTurtles.length;i++)
+{
+	for(let letter of ninjaTurtles[i])
+	{
+		if(!swichFlag)
+		{
+			turtle += letter.toUpperCase()
+			swichFlag = true
+		}
+		else
+		{
+			turtle += letter
+			swichFlag = false
+		}
+	}
+	console.log(turtle)
+}
 
