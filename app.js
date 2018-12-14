@@ -224,7 +224,7 @@ console.log(`The sum of all the multiples of 3 or 5 below 1000 = ${naturalNumber
 //console.log(Math.floor((n/m2))*m2 * (Math.floor((n/m2+1)))/2);
 //console.log(Math.floor((n/(m1*m2)))*m1*m2 * (Math.floor((n/(m1*m2)+1)))/2);
 
-console.log(`******* Bonus #2) Find the Median *******`);
+console.log(`******* Bonus #2) Find the Median *******` );
 let min = 0;
 let max = 0;
 const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
