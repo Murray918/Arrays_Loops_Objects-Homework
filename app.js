@@ -71,4 +71,48 @@ for(let i = 0;i<ninjaTurtles.length;i++)
 	}
 	console.log(turtle)
 }
+//This problem was incorrect, kristyn's left shoe was already a property of kristyn's closet, so I had to move the property to Thom's accessories
+const kristynsCloset = [
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "kristyn's left shoe",
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+let kristynsShoe = thomsCloset[2][0]
+kristynsCloset.push(kristynsShoe)
+let kristynsOutfit = ""
+let thomsOutfit = ""
+let thomsRandomNumber = 0
+for(let i = 0;i<3;i++)
+{
+	thomsRandomNumber = Math.floor(Math.random()*2)
+	kristynsOutfit += (kristynsCloset[Math.floor(Math.random()*5)] + "\n")
+	thomsOutfit += thomsCloset[thomsRandomNumber][Math.floor(Math.random()*thomsCloset[thomsRandomNumber].length)] + "\n"
+}
+console.log("Thomas changes his outfit everytime you ask him to, right now he's wearing: \n"+thomsOutfit)
+console.log("Kristyn changes her outfit everytime you ask her to, right now she's wearing: \n"+kristynsOutfit)
 
