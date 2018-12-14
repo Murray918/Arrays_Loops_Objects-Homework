@@ -38,3 +38,17 @@ for(let i = 1;i<100;i++)
 		check2 = false
 	}
 }
+const kenny = ["Kenny", 1000, "Austin"]
+const jimHaff = ["Jim H", 16, "All cities"]
+const reuben = ["Reuben", 22, "Durham"]
+const jimClark = ["Jim C", 186, "LA"]
+const ryan = ["Ryan", 65, "Denver"]
+kenny[0] = "Gameboy"
+jimClark[1]++
+ryan[2] = "Gotham City"
+reuben.pop()
+reuben.push("Chicago")
+jimHaff.pop()
+jimHaff.push("Los Angeles", "Austin", "Sacramento")
+jimHaff.splice(2, 1)
+
