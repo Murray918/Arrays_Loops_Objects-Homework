@@ -8,7 +8,7 @@ for(let i = 0; i <=200; i++){
 		console.log(i)
 	}
 }
-*/
+
 let getCatSaying = function(max) {
 	return  Math.floor(Math.random() * Math.floor(max))
 }
@@ -20,13 +20,25 @@ for(let x = 0;x <=20; x++){
 	if(x%2 !=1){
 		console.log(catSayings[getCatSaying(3)])
 		} else {
-			console.log('Love ne, pet me! HSSSSS!')
+			console.log('Love me, pet me! HSSSSS!')
 		}
-
-
 	}
+*/
+
+
+
+for(let i = 1; i<=100; i++){
+	if(i%3 ==0 && i%5 == 0){
+		console.log('FizzBuzz')
+	}else if(i%5 == 0){
+		console.log('Buzz')
+	}else if(i%3 ==0){
+		console.log('Fizz')
+	}else {
+		console.log(i)
+	}
+}
 
 
 
 
-console.log(getCatSaying(3))
