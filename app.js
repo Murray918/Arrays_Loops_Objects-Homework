@@ -14,3 +14,16 @@ for (j=0; j<20; j++){
 		console.log("...human...why are you taking pictures of me?")
 	}
 	}
+//4.
+for (i=0; i<100;i++){
+	if (i % 3 ===0){
+		console.log("Fizz")
+	
+		} else if  (i % 5 ===0){
+			console.log("Buzz")
+		} else if (i %3 ===0 && i % 5 ===0){
+			console.log("FizzBuzz")
+		} else {
+			console.log(i)
+		}
+	}
