@@ -47,3 +47,10 @@ jimHaff.push("Austin","Midland","Amarillo")
 console.log(jimHaff)
 jimHaff.splice(2,1)
 console.log(jimHaff)
+
+
+ninjaTurtles = [ "Donatello","Leonardo","Michaelangelo"]
+for (i=0;i<3;i++){
+	console.log(ninjaTurtles[i].toUpperCase())
+	
+}
