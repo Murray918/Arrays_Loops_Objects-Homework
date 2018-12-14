@@ -157,4 +157,7 @@ for(let i = (argument+1);i>0;i--)
 	triangle4 += (' '.repeat(argument-i+1) + '#'.repeat(i-1) + "\n")
 }
 console.log(triangle4)
-
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+let nums2 = nums.sort()
+let median = nums2[Math.floor(nums2.length/2)]
+console.log(median)
