@@ -1,7 +1,7 @@
 
 //Write a for loop that will log the numbers 1 through 20.
 
-/*
+
 for(let i = 1; i <= 20; i++){
 	console.log(i)
 }
@@ -10,7 +10,7 @@ for(let i = 1; i <= 20; i++){
 //Write a for loop that will log only the even numbers in 0 through 200.
 
 for(let i = 1; i <=200; i++){
-	if(i % 2 == 0){
+	if(i % 2 === 0){
 		console.log(i)
 	}
 }
@@ -18,7 +18,7 @@ for(let i = 1; i <=200; i++){
 
 let kitty = ["...human...why you taking pictures of me?...", "...the catnip made me do it..." , "...why does the red dot always get away..."]
 for(let kitten = 0; kitten < 20; kitten++){
-	if(kitten % 2 == 0){
+	if(kitten % 2 === 0){
 	console.log("Love me, pet me! HSSSSSS!")
   } else{
   	console.log(kitty[Math.floor(Math.random() * 3)])
@@ -29,7 +29,7 @@ for(let kitten = 0; kitten < 20; kitten++){
 for(i = 0; i <= 100; i++){
 	if(i % 3 === 0 && i % 5 === 0){
 		console.log('FizzBuzz')
-	}else if(i % 5 ===0){
+	}else if(i % 5 === 0){
 		console.log('Buzz')
 	}else if(i % 3 === 0){
 		console.log('Fizz')
@@ -113,15 +113,14 @@ for(let i = 0; i < thomsCloset.length; i++){
 let stored = 0
 
 for(let i = 0; i <= 1000; i++){
-   if(i % 3 == 0 || i % 5 == 0){
+   if(i % 3 === 0 || i % 5 === 0){
    	 stored = stored + i
    }
 }
 console.log(stored)
-*/
-let x = 2
-let y = 2
-console.log(x + y)
+
+
+
 
 
 
