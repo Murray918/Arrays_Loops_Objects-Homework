@@ -37,7 +37,7 @@ for(let i = 1; i<=100; i++){
 	}else {
 		console.log(i)
 	}
-}*/
+}*/ /*
 const kenny = ["Kenny", 1000, "Austin"];
 const jimHaff = ["Jim H", 16, "All cities"];
 const reuben = ["Reuben", 22, "Durham"];
@@ -58,18 +58,13 @@ jimHaff.push('houston','austin','dallas')
 
 jimHaff.splice(2,1)
 
+*/
 
+let ninja = ['Donatello','Leonardo','Raphael','Michaelangelo']
 
-
-
-
-
-
-
-
-
-
-
+for(let i = 0; i < ninja.length; i++){
+	console.log(ninja[i].toUpperCase())
+}
 
 
 
