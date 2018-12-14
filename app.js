@@ -186,11 +186,43 @@ console.log(`Tom has ${thomsCloset[0].length} shirts, ${thomsCloset[1].length} p
 
 //9) If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
 //Find the sum of all the multiples of 3 or 5 below 1000.
+console.log(`******* 9) Multiples of 3 and 5 *******`);
+let naturalNumbersArray = 0;
+const n = 1000;
+const m1 = 3;
+const m2 = 5;
+
+//needs to equal 233168.  This is way easier to read than trying to enter the formula!!!
+//This way is not going to be the fastest or least amount of memory to achieve the answer by no means, but at least I can follow it!!!
+//for loop speed is 0(log n) vs the formula is 0(n).
+for (let i = 0; i < n/2; ++i)
+{
+	if ( (m1*i) < n)
+		naturalNumbersArray += 3*i;
+		
+	if ( (m2*i) < n)
+		naturalNumbersArray += 5*i;
+
+	//remove dups
+	if ( (m1*m2*i) < n)
+		naturalNumbersArray -= 3*5*i;
+}
+
+console.log(`The sum of all the multiples of 3 or 5 below 1000 = ${naturalNumbersArray}`);
 
 
+//This is the formula below -- it was too confusing to write and no one could decipher it later
+//3⋅333(333+1)/2
+//n/m1 = 333 
+//m1*(n/m1)*((n/m1)+1)/2 = 166833 
+//n/m2 = 200 
+//m2*(n/m2)((n/m2)+1)/2 = 99500
+//n/m1*m2 = 66  = 33165
 
-
-
+//formula is below...
+//console.log(Math.floor((n/m1))*m1 * (Math.floor((n/m1+1)))/2);
+//console.log(Math.floor((n/m2))*m2 * (Math.floor((n/m2+1)))/2);
+//console.log(Math.floor((n/(m1*m2)))*m1*m2 * (Math.floor((n/(m1*m2)+1)))/2);
 
 
 
