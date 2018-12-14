@@ -116,5 +116,14 @@ let kristynsShoe = kristynsCloset[0];
 thomsCloset[2].push(kristynsShoe);
 
 
-console.log(thomsCloset[2]);
+for(let clothes of kristynsCloset) {
+	console.log("WHIRR: Now washing", clothes);
+}
+
+console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2]);
+
+
+
+
+
 
