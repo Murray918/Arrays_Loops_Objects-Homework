@@ -60,8 +60,8 @@ let turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
   for(let i of turtles){
      console.log(i.toUpperCase())
   }
-
 */
+
 
 const kristynsCloset = [
   "left shoe",
@@ -97,9 +97,17 @@ const thomsCloset = [
 let kristynsShoe = kristynsCloset.shift() 
 thomsCloset[2].push(kristynsShoe)
 
-console.log("Today, Kristyn is wearing, " + kristynsCloset[0] + " " + kristynsCloset[3] + " and thom is wearing, " + thomsCloset[2][1] + " " + thomsCloset[2][2])
-console.log("Today, Kristyn is wearing, " + kristynsCloset[3] + " " + kristynsCloset[2] + " and thom is wearing, " + thomsCloset[0][2] + " " + thomsCloset[0][3])
-console.log("Today, Kristyn is wearing, " + kristynsCloset[1] + " " + kristynsCloset[4] + " and thom is wearing, " + thomsCloset[1][1] + " " + thomsCloset[1][2])
+//console.log("Today, Kristyn is wearing, " + kristynsCloset[0] + " " + kristynsCloset[3] + " and thom is wearing, " + thomsCloset[2][1] + " " + thomsCloset[2][2])
+//console.log("Today, Kristyn is wearing, " + kristynsCloset[3] + " " + kristynsCloset[2] + " and thom is wearing, " + thomsCloset[0][2] + " " + thomsCloset[0][3])
+//console.log("Today, Kristyn is wearing, " + kristynsCloset[1] + " " + kristynsCloset[4] + " and thom is wearing, " + thomsCloset[1][1] + " " + thomsCloset[1][2])
+
+for(let i = 0; i < kristynsCloset.length; i++){
+	console.log("WHIRR: Now washing " + kristynsCloset[i])
+}
+
+for(let i = 0; i < thomsCloset.length; i++){
+	console.log(thomsCloset[i].toString() + "\n")
+}
 
 
 
