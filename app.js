@@ -124,11 +124,12 @@ for (let turtles of nt)
 
 
 //7) Alien Attire
-//Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+//- Kristyn's left shoe has traveled through time and space and turned up in Thom's accessories drawer! 
+//  Remove Kristyn's shoe from the array and save it to the variable kristynsShoe. Use that variable to add Kristyn's lost shoe to Thom's accessories array.
 //Dress 'em Up
-//Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match! 
+//- Modify your code to put together 3 separate outfits for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match! 
 
-
+console.log(`******* 7) Return of the Closets *******`);
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -159,6 +160,13 @@ const thomsCloset = [
     "raybans"
   ]
 ];
+
+let kristynsShoe = kristynsCloset.shift();
+thomsCloset[2].push(kristynsShoe);
+console.log(`Tom's accessories now has Kristy's ${thomsCloset[2][3]}`);
+console.log(`Kristy is wearing ${kristynsCloset[0]} with ${kristynsCloset[3]} and ${kristynsCloset[2]}`);
+console.log(`Tom is wearing ${thomsCloset[0][1]} with ${thomsCloset[1][1]} and ${thomsCloset[2][2]}`);
+
 
 
 //8) Dirty Laundry
