@@ -29,7 +29,7 @@ for(i; i<=20; i++) {
 }
 */
 
-
+/*
 for(i=1; i<100; i++) {
 	
 	if ((i%3)==0 && (i%5)==0) {
@@ -46,8 +46,26 @@ for(i=1; i<100; i++) {
 		console.log(i)
 	}
 }
+*/
+
+
+const kenny = ["Gameboy", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
 
 
 
+jimClark[1]++;
+ryan[2] = "Gotham City";
+reuben.pop();
+reuben.push("Chicago");
+jimHaff.pop();
+jimHaff.push("New York", "Tokyo", "Berlin");
+
+
+console.log(reuben[2])
+console.log(jimHaff)
 
 
