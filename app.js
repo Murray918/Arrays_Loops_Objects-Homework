@@ -90,8 +90,10 @@ console.log(kristynsCloset)
 
 let kristynsShoe = "left shoe"
 thomsCloset[2].push(kristynsShoe)
-console.log(thomsCloset)
+//console.log(thomsCloset)
 
-thomsCloset.info = function(){
-	return thomsCloset[2][1]}
-console.log(thomsCloset.info())
+//thomsCloset.info = function(){
+//	return thomsCloset[[0]] }
+//console.log(thomsCloset.info())
+
+thomsCloset.forEach(thomsCloset => console.log(thomsCloset))
