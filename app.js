@@ -48,7 +48,7 @@ for(i=1; i<100; i++) {
 }
 */
 
-
+/*
 const kenny = ["Gameboy", 1000, "Austin"];
 const jimHaff = ["Jim H", 16, "All cities"];
 const reuben = ["Reuben", 22, "Durham"];
@@ -67,5 +67,10 @@ jimHaff.push("New York", "Tokyo", "Berlin");
 
 console.log(reuben[2])
 console.log(jimHaff)
+*/
 
+let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
+for(let name of ninjaTurtles) {
+	console.log(name.toUpperCase());
+}
