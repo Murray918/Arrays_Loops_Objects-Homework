@@ -15,7 +15,7 @@ for(let i = 1; i <=200; i++){
 	}
 }
 
-*/
+
 let kitty = ["...human...why you taking pictures of me?...", "...the catnip made me do it..." , "...why does the red dot always get away..."]
 for(let kitten = 0; kitten < 20; kitten++){
 	if(kitten % 2 == 0){
@@ -24,7 +24,7 @@ for(let kitten = 0; kitten < 20; kitten++){
   	console.log(kitty[Math.floor(Math.random() * 3)])
   }
 }
-/*
+
 
 for(i = 0; i <= 100; i++){
 	if(i % 3 === 0 && i % 5 === 0){
@@ -62,4 +62,46 @@ let turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
   }
 
 */
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+let kristynsShoe = kristynsCloset.shift() 
+thomsCloset[2].push(kristynsShoe)
+
+console.log("Today, Kristyn is wearing, " + kristynsCloset[0] + " " + kristynsCloset[3] + " and thom is wearing, " + thomsCloset[2][1] + " " + thomsCloset[2][2])
+console.log("Today, Kristyn is wearing, " + kristynsCloset[3] + " " + kristynsCloset[2] + " and thom is wearing, " + thomsCloset[0][2] + " " + thomsCloset[0][3])
+console.log("Today, Kristyn is wearing, " + kristynsCloset[1] + " " + kristynsCloset[4] + " and thom is wearing, " + thomsCloset[1][1] + " " + thomsCloset[1][2])
+
+
+
+
 
