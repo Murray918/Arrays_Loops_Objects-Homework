@@ -15,16 +15,16 @@ for(let i = 1; i <=200; i++){
 	}
 }
 
-
-
+*/
+let kitty = ["...human...why you taking pictures of me?...", "...the catnip made me do it..." , "...why does the red dot always get away..."]
 for(let kitten = 0; kitten < 20; kitten++){
 	if(kitten % 2 == 0){
 	console.log("Love me, pet me! HSSSSSS!")
   } else{
-  	console.log("...human...why you taking pictures of me?...")
+  	console.log(kitty[Math.floor(Math.random() * 3)])
   }
 }
-
+/*
 
 for(i = 0; i <= 100; i++){
 	if(i % 3 === 0 && i % 5 === 0){
@@ -54,12 +54,12 @@ jimHaff.splice(2, 1, 'Miami', 'New York', 'Detroit')
 jimHaff.splice(4, 1)
 
 console.log(jimHaff)
-*/
+
 
 let turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
   for(let i of turtles){
      console.log(i.toUpperCase())
   }
 
-
+*/
 
