@@ -70,7 +70,7 @@ for (let i = 1; i <= 100; ++i)
 //  and add them to Jim's array. If you did it in 3 lines of code that's fine, but see if you can do it in one line of code
 //- Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now, 
 //  remove it from the array using .splice()
-
+console.log(`******* 5) Getting to Know You -- See Code too *******`);
 const kenny = ["Kenny", 1000, "Austin"];
 const jimHaff = ["Jim H", 16, "All cities"];
 const reuben = ["Reuben", 22, "Durham"];
@@ -78,20 +78,47 @@ const jimClark = ["Jim C", 186, "LA"];
 const ryan = ["Ryan", 65, "Denver"];
 
 kenny[0] = "Gameboy";
+console.log(kenny);
 jimClark[1] = jimClark[1] + 1;
+console.log(jimClark[1]);
 ryan[2] = "Gotham City";
+console.log(ryan[2]);
 reuben.pop();
 reuben.push("Chicago");
+console.log(reuben);
 jimHaff.splice(2,1,"Atlanta", "New York", "Miami");  //remove "All cities" and add 3 new cities
+console.log(jimHaff);
 jimHaff.splice(2,1);   //bonus
-
+console.log(jimHaff);
 
 //6) Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 //Use a for loop to call .toUpperCase() on each of them and print out the result.
 //Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
 
+console.log(`******* 6) Yell at the Ninja Turtles *******`);
+nt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
+for (let turtles of nt)
+{
+	turtles = turtles.toUpperCase();
+	console.log(turtles);
+}
+console.log(`******* 6) Yell at the Ninja Turtles BONUS *******`);
 
+for (let turtles of nt)
+{
+	let turtlesCharacters = turtles.split('')
+
+	for (let i = 0; i <= turtles.length; ++i)
+	{
+		if (i%2 == 0)
+		{
+			turtlesCharacters.splice(i,1,turtles.charAt(i).toUpperCase());  //replace the current letter with the Uppercase
+		}
+	}
+	turtles = turtlesCharacters.join('');
+	console.log(turtles);	
+}
 
 
 
