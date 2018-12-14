@@ -78,7 +78,7 @@ for(let name of ninjaTurtles) {
 }
 */
 
-
+/*
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -121,6 +121,22 @@ for(let clothes of kristynsCloset) {
 }
 
 console.log(thomsCloset[0], thomsCloset[1], thomsCloset[2]);
+
+*/
+
+let sum = 0;
+ 
+for(i=0; i<1000; i++) {
+	if((i%3) == 0 || (i%5) == 0){
+		 sum+=i
+	}
+}
+
+console.log(sum);
+
+
+
+
 
 
 
