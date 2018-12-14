@@ -171,19 +171,17 @@ console.log(`Tom is wearing ${thomsCloset[0][1]} with ${thomsCloset[1][1]} and $
 
 //8) Dirty Laundry
 //Continue looking at the closet arrays:
-//Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+//- Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
 //Inventory
-//Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+//- Thom wants to do inventory on his closet. Using bracket notation, log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 
+console.log(`******* 8) Dirty Laundry *******`);
 
-
-
-
-
-
-
-
-
+for (let items of kristynsCloset)
+{
+	console.log(`WHIRR: Now washing ${items}`);
+}
+console.log(`Tom has ${thomsCloset[0].length} shirts, ${thomsCloset[1].length} pants and ${thomsCloset[2].length} accessories`);
 
 
 //9) If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
