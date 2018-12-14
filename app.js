@@ -108,7 +108,7 @@ for(let i = 0; i < kristynsCloset.length; i++){
 for(let i = 0; i < thomsCloset.length; i++){
 	console.log(thomsCloset[i].toString() + "\n")
 }
-*/
+
 
 let stored = 0
 
@@ -118,6 +118,10 @@ for(let i = 0; i <= 1000; i++){
    }
 }
 console.log(stored)
+*/
+let x = 2
+let y = 2
+console.log(x + y)
 
 
 
