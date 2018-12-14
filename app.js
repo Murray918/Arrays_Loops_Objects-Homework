@@ -60,7 +60,7 @@ let turtles = ['Donatello', 'Leonardo', 'Raphael', 'Michaelangelo']
   for(let i of turtles){
      console.log(i.toUpperCase())
   }
-*/
+
 
 
 const kristynsCloset = [
@@ -108,8 +108,16 @@ for(let i = 0; i < kristynsCloset.length; i++){
 for(let i = 0; i < thomsCloset.length; i++){
 	console.log(thomsCloset[i].toString() + "\n")
 }
+*/
 
+let stored = 0
 
+for(let i = 0; i <= 1000; i++){
+   if(i % 3 == 0 || i % 5 == 0){
+   	 stored = stored + i
+   }
+}
+console.log(stored)
 
 
 
