@@ -69,8 +69,52 @@ console.log(reuben[2])
 console.log(jimHaff)
 */
 
+
+/*
 let ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 for(let name of ninjaTurtles) {
 	console.log(name.toUpperCase());
 }
+*/
+
+
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+  ];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+
+
+let kristynsShoe = kristynsCloset[0];
+thomsCloset[2].push(kristynsShoe);
+
+
+console.log(thomsCloset[2]);
+
