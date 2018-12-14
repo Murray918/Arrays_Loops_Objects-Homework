@@ -102,7 +102,7 @@ const thomsCloset = [
     "raybans"
   ]
 ];
-let kristynsShoe = thomsCloset[2][0]
+let kristynsShoe = thomsCloset[2].splice(0, 1)
 kristynsCloset.push(kristynsShoe)
 let kristynsOutfit = ""
 let thomsOutfit = ""
@@ -115,4 +115,13 @@ for(let i = 0;i<3;i++)
 }
 console.log("Thomas changes his outfit everytime you ask him to, right now he's wearing: \n"+thomsOutfit)
 console.log("Kristyn changes her outfit everytime you ask her to, right now she's wearing: \n"+kristynsOutfit)
+for(let item of kristynsCloset)
+{
+	console.log("WHIRR: Now washing "+item)
+}
+//array bracket notation?
+for(let item of thomsCloset)
+{
+	console.log(item)
+}
 
