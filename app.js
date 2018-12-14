@@ -24,21 +24,21 @@ for(let kitten = 0; kitten < 20; kitten++){
   	console.log("...human...why you taking pictures of me?...")
   }
 }
-
+*/
 //CAN NOT GET THIS TO WORK RIGHT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! FizzBuzz wouldn't log =, (
 for(i = 0; i <= 100; i++){
-	if(i % 3 === 0){
-		console.log('Fizz')
+	if(i % 3 === 0 && i % 5 === 0){
+		console.log('FizzBuzz')
 	}else if(i % 5 ===0){
 		console.log('Buzz')
-	}else if(i % 3 === 0 && i % 5 === 0){
-		console.log('FizzBuzz')
+	}else if(i % 3 === 0){
+		console.log('Fizz')
 	}else{
 		console.log(i)
 	}
 }
-*/
 
+/*
 const kenny = ["Kenny", 1000, "Austin"];
 const jimHaff = ["Jim H", 16, "All cities"];
 const reuben = ["Reuben", 22, "Durham"];
@@ -55,4 +55,8 @@ jimHaff.splice(2, 1, 'Miami', 'New York', 'Detroit')
 jimHaff.splice(4, 1)
 
 console.log(jimHaff)
+*/
+
+
+
 
