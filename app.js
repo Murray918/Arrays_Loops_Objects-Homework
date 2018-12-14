@@ -132,3 +132,29 @@ for(let i = 0;i<1000;i++)
 	if(i%5==0)
 		sum+=i
 }
+let argument = 15
+let triangle = ""
+for(let i = 0;i<=argument;i++)
+{
+	triangle += ('#'.repeat(i) + "\n")
+}
+console.log(triangle)
+let triangle2 = ""
+for(let i = (argument+1);i>0;i--)
+{
+	triangle2 += (' '.repeat(i-1) + '#'.repeat(argument-i+1) + "\n")
+}
+console.log(triangle2)
+let triangle3 = ""
+for(let i = argument;i>0;i--)
+{
+	triangle3 += ('#'.repeat(i) + "\n")
+}
+console.log(triangle3)
+let triangle4 = ""
+for(let i = (argument+1);i>0;i--)
+{
+	triangle4 += (' '.repeat(argument-i+1) + '#'.repeat(i-1) + "\n")
+}
+console.log(triangle4)
+
