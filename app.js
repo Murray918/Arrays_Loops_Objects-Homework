@@ -54,3 +54,44 @@ for (i=0;i<3;i++){
 	console.log(ninjaTurtles[i].toUpperCase())
 	
 }
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
+
+// Thom's closet is more complicated. Check out this nested data structure!!
+const thomsCloset = [
+  [
+    // These are Thom's shirts
+    "grey button-up",
+    "dark grey button-up",
+    "light blue button-up",
+    "blue button-up",
+  ],[
+    // These are Thom's pants
+    "grey jeans",
+    "jeans",
+    "PJs"
+  ],[
+    // Thom's accessories
+    "wool mittens",
+    "wool scarf",
+    "raybans"
+  ]
+];
+
+kristynsCloset.splice(0,1)
+console.log(kristynsCloset)
+
+let kristynsShoe = "left shoe"
+thomsCloset[2].push(kristynsShoe)
+console.log(thomsCloset)
+
+thomsCloset.info = function(){
+	return thomsCloset[2][1]}
+console.log(thomsCloset.info())
